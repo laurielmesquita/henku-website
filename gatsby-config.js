@@ -1,31 +1,48 @@
 module.exports = {
   siteMetadata: {
-    title: `Henku Website`,
-    description: `Consultoria em data Science e projetos de machine learning.`,
-    author: `@laurielmesquita`
+    title: 'Henku Website',
+    description: 'Consultoria em data Science e projetos de machine learning.',
+    author: '@laurielmesquita'
   },
   plugins: [
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-plugin-google-fonts-v2',
       options: {
-        name: `images`,
+        fonts: [
+          {
+            family: 'Montserrat',
+            variable: true,
+            weights: ['400']
+          },
+          {
+            family: 'Poppins',
+            variable: true,
+            weights: ['500']
+          }
+        ]
+      }
+    },
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
         path: `${__dirname}/src/images`
       }
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/henku-icon.png` // This path is relative to the root of the site.
+        name: 'gatsby-starter-default',
+        short_name: 'starter',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/images/henku-icon.png' // This path is relative to the root of the site.
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -14,6 +14,8 @@ const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+    font-weight: 400;
   }
 
   a:not([class]) {
@@ -34,6 +36,11 @@ const GlobalStyles = createGlobalStyle`
   textarea,
   select {
     font: inherit;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins";
+    font-weight: 500;
   }
 `
 export default GlobalStyles
