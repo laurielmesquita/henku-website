@@ -6,20 +6,20 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-google-fonts-v2',
+      resolve: 'gatsby-plugin-webfonts',
       options: {
-        fonts: [
-          {
-            family: 'Montserrat',
-            variable: true,
-            weights: ['400']
-          },
-          {
-            family: 'Poppins',
-            variable: true,
-            weights: ['500']
-          }
-        ]
+        fonts: {
+          google: [
+            {
+              family: 'Montserrat',
+              variants: ['400']
+            },
+            {
+              family: 'Poppins',
+              variants: ['500']
+            }
+          ]
+        }
       }
     },
     'gatsby-plugin-styled-components',
