@@ -3,6 +3,13 @@ import reset from 'styled-reset-advanced'
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
+  :root {
+    --container: 1386px;
+    --highlight: #526af2;
+    --theme: #5D6494;
+    --themeDark: #414771;
+    --visited: #5d6494;
+  }
   *,
   *::before,
   *::after {
