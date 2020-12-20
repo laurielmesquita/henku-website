@@ -1,7 +1,14 @@
 import React from 'react'
 import Brand from '../Brand'
+import SocialLinks from '../SocialLinks'
 
-import { MenuBarWrapper, Container, MenuBarList, MenuBarLinks } from './style'
+import {
+  MenuBarWrapper,
+  Container,
+  MenuBarList,
+  MenuBarItem,
+  MenuBarLinks
+} from './style'
 
 const MenuBar = () => (
   <MenuBarWrapper>
@@ -12,21 +19,24 @@ const MenuBar = () => (
         </MenuBarLinks>
       </h1>
       <MenuBarList>
-        <li>
+        <MenuBarItem>
           <MenuBarLinks to='/about' title='Página sobre nós'>
             Sobre Nós
           </MenuBarLinks>
-        </li>
-        <li>
+        </MenuBarItem>
+        <MenuBarItem>
           <MenuBarLinks to='/machine-learning' title='Página machine learning'>
             Machine Learning
           </MenuBarLinks>
-        </li>
-        <li>
+        </MenuBarItem>
+        <MenuBarItem>
           <MenuBarLinks to='/data-science' title='Página data science'>
             Data Science
           </MenuBarLinks>
-        </li>
+        </MenuBarItem>
+        <MenuBarItem>
+          <SocialLinks />
+        </MenuBarItem>
       </MenuBarList>
     </Container>
   </MenuBarWrapper>

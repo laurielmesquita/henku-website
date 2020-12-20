@@ -5,13 +5,11 @@ import { Link } from 'gatsby'
 export const MenuBarWrapper = styled.header`
   padding: 1rem 0;
   width: 100%;
-  background-color: coral;
 `
 
 export const Container = styled.nav`
   margin: 0 auto;
   max-width: var(--container);
-  background-color: greenyellow;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,9 +19,15 @@ export const MenuBarList = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-right: 4px;
-  padding-left: 10px;
 `
+
+export const MenuBarItem = styled.li`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+`
+
 export const MenuBarLinks = styled(Link)`
   display: block;
   margin-right: 3.75rem;
