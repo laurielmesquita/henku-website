@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const SocialLink = styled.a`
   color: var(--themeDark);
-  transition: color 0.5s;
 
   &:last-of-type {
     margin-left: 1.875rem;

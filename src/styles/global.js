@@ -25,8 +25,12 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 400;
   }
 
-  a:not([class]) {
-    text-decoration-skip-ink: auto;
+  a {
+    transition: color 0.3s;
+    
+    &:not([class]) {
+      text-decoration-skip-ink: auto;
+    }
   }
 
   img {
