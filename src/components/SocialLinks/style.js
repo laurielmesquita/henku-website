@@ -5,15 +5,23 @@ const media = generateMedia({
   xs: '250px',
   sm: '576px',
   md: '768px',
-  lg: '991px',
+  lg: '992px',
   xl: '1200px',
   xxl: '1400px'
 })
 
 export const SocialLink = styled.a`
-  &:last-of-type {
-    margin-left: 1.875rem;
-  }
+  ${media.lessThan('lg')`
+    &:last-of-type {
+      marging-left: 0;
+    }
+  `}
+
+  ${media.greaterThan('lg')`
+    &:last-of-type {
+      margin-left: 1.875rem;
+    }
+  `}
 `
 
 export const SocialLinkIconWrapper = styled.div`
@@ -22,7 +30,7 @@ export const SocialLinkIconWrapper = styled.div`
   align-items: center;
 
   svg {
-    color: var(--theme);
+    color: var(--brand);
     width: 36px;
     height: 36px;
     transition: color 0.3s;

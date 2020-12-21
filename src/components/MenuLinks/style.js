@@ -6,7 +6,7 @@ const media = generateMedia({
   xs: '250px',
   sm: '576px',
   md: '768px',
-  lg: '991px',
+  lg: '992px',
   xl: '1200px',
   xxl: '1400px'
 })
@@ -114,24 +114,26 @@ export const Container = styled.nav`
 `
 
 export const MenuLinksList = styled.ul`
-  ${media.lessThan('lg')`
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    font-size: 45px;
-    opacity: 0;
-    transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02);
-    visibility: hidden;
-    z-index: 2;
-  `}
-
   ${media.greaterThan('lg')`
     display: flex;
     padding-right: 0.9375rem;
     flex-direction: row;
     justify-content: space-around;
+  `}
+
+  ${media.lessThan('lg')`
+    padding-right: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    font-size: 2.8125rem;
+    font-size: calc( 32px + (60 - 32) * (100vw - 300px) / (1386 - 300) );
+    opacity: 0;
+    /* transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02); */
+    visibility: hidden;
+    z-index: 2;
   `}
 `
 
@@ -140,14 +142,26 @@ export const MenuLinksItem = styled.li`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+
+  ${media.lessThan('lg')`
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-bottom: calc( 16px + (40 - 16) * (100vw - 300px) / (1386 - 300) );
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  `}
+
+  ${media.greaterThan('lg')`
+  `}
 `
 
 export const MenuLinksLink = styled(Link)`
-  display: block;
   margin-right: 3.75rem;
   color: var(--themeDark);
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
 
   &.active {
     color: var(--highlight);
@@ -158,8 +172,6 @@ export const MenuLinksLink = styled(Link)`
   }
 
   ${media.lessThan('lg')`
-    font-size: 1.6rem;
-    text-align: center;
     margin: 0 0 1em 0;
     color: rgba(255, 255, 255, 1);
 
