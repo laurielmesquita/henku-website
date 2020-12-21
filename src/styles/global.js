@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
   ${reset}
   :root {
     --container: 1386px;
+    --brand: #4453a6;
     --highlight: #526af2;
     --theme: #5D6494;
     --themeDark: #414771;
