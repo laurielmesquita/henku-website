@@ -54,7 +54,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     line-height: 1.2;
-    margin-bottom: calc(4% - 1.9rem);
+    margin-bottom: calc(4% + .3rem);
   }
 
   h1 {
