@@ -95,6 +95,7 @@ export const Container = styled.nav`
 
   & > h1 {
     padding-left: 0.9375rem;
+    margin-bottom: 0;
 
     a {
       margin: 0;
@@ -130,6 +131,7 @@ export const MenuLinksList = styled.ul`
     list-style: none;
     font-size: 2.8125rem;
     font-size: calc( 32px + (60 - 32) * (100vw - 300px) / (1386 - 300) );
+    line-height: 1.4;
     opacity: 0;
     /* transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02); */
     visibility: hidden;
