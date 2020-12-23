@@ -1,20 +1,10 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { generateMedia } from 'styled-media-query'
-
-const media = generateMedia({
-  xs: '250px',
-  sm: '576px',
-  md: '768px',
-  lg: '992px',
-  xl: '1200px',
-  xxl: '1400px'
-})
 
 export const MenuLinksInput = styled.input`
   display: none;
 
-  ${media.lessThan('lg')`
+  @media only screen and (max-width: 991px) {
     &:checked ~ label .menu {
       box-shadow: 0 0 0 130vw var(--theme), 0 0 0 130vh var(--theme);
     }
@@ -33,11 +23,11 @@ export const MenuLinksInput = styled.input`
       opacity: 1;
       visibility: visible;
     }
-  `}
+  }
 `
 
 export const MenuLinksLabel = styled.label`
-  ${media.lessThan('lg')`
+  @media only screen and (max-width: 991px) {
     .menu {
       border-radius: 50%;
       background: var(--theme);
@@ -61,14 +51,14 @@ export const MenuLinksLabel = styled.label`
         left: 13px;
         width: 24px;
         height: 2px;
-        background: #FFF;
+        background: #fff;
         display: block;
         transform-origin: center;
         transition: 0.5s ease-in-out;
 
         &:after,
         &:before {
-          background: #FFF;
+          background: #fff;
           content: '';
           display: block;
           transition: 0.5s ease-in-out;
@@ -86,7 +76,7 @@ export const MenuLinksLabel = styled.label`
         }
       }
     }
-  `}
+  }
 `
 
 export const Container = styled.nav`
@@ -107,22 +97,23 @@ export const Container = styled.nav`
     }
   }
 
-  ${media.greaterThan('lg')`
+  @media only screen and (min-width: 992px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  `}
+  }
 `
 
 export const MenuLinksList = styled.ul`
-  ${media.greaterThan('lg')`
+  @media only screen and (min-width: 992px) {
     display: flex;
     padding-right: 0.9375rem;
     flex-direction: row;
     justify-content: space-around;
-  `}
+  }
 
-  ${media.lessThan('lg')`
+  @media only screen and (max-width: 991px) {
+    width: 88%;
     padding-right: 0;
     position: absolute;
     top: 50%;
@@ -130,34 +121,34 @@ export const MenuLinksList = styled.ul`
     transform: translate(-50%, -50%);
     list-style: none;
     font-size: 2.8125rem;
-    font-size: calc( 32px + (60 - 32) * (100vw - 300px) / (1386 - 300) );
-    line-height: 1.4;
+    font-size: calc(32px + (60 - 32) * (100vw - 300px) / (1386 - 300));
+    line-height: 1.2;
     opacity: 0;
     /* transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02); */
     visibility: hidden;
     z-index: 2;
-  `}
+  }
 `
 
 export const MenuLinksItem = styled.li`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
-  ${media.lessThan('lg')`
+  @media only screen and (max-width: 991px) {
     width: 100%;
     text-align: center;
-    margin-bottom: 2rem;
-    margin-bottom: calc( 16px + (40 - 16) * (100vw - 300px) / (1386 - 300) );
+    margin-bottom: 3rem;
 
     &:last-of-type {
       margin-bottom: 0;
     }
-  `}
+  }
 
-  ${media.greaterThan('lg')`
-  `}
+  @media only screen and (max-width: 335px) {
+    margin-bottom: 2.5rem;
+  }
 `
 
 export const MenuLinksLink = styled(Link)`
@@ -173,17 +164,17 @@ export const MenuLinksLink = styled(Link)`
     color: var(--highlight);
   }
 
-  ${media.lessThan('lg')`
-    margin: 0 0 1em 0;
+  @media only screen and (max-width: 991px) {
+    margin: 0;
     color: rgba(255, 255, 255, 1);
 
     &.active,
     &:hover {
       color: rgba(255, 255, 255, 0.7);
     }
-  `}
+  }
 
-  ${media.greaterThan('lg')`
+  @media only screen and (min-width: 992px) {
     margin-right: 3.75rem;
-  `}
+  }
 `

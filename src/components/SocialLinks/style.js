@@ -1,27 +1,9 @@
 import styled from 'styled-components'
-import { generateMedia } from 'styled-media-query'
-
-const media = generateMedia({
-  xs: '250px',
-  sm: '576px',
-  md: '768px',
-  lg: '992px',
-  xl: '1200px',
-  xxl: '1400px'
-})
 
 export const SocialLink = styled.a`
-  ${media.lessThan('lg')`
-    &:last-of-type {
-      marging-left: 0;
-    }
-  `}
-
-  ${media.greaterThan('lg')`
-    &:last-of-type {
-      margin-left: 1.875rem;
-    }
-  `}
+  &:last-of-type {
+    margin-left: 1.875rem;
+  }
 `
 
 export const SocialLinkIconWrapper = styled.div`
@@ -39,7 +21,7 @@ export const SocialLinkIconWrapper = styled.div`
       color: var(--highlight);
     }
 
-    ${media.lessThan('lg')`
+    @media only screen and (max-width: 991px) {
       color: rgba(255, 255, 255, 1);
       width: 46px;
       height: 46px;
@@ -47,6 +29,6 @@ export const SocialLinkIconWrapper = styled.div`
       &:hover {
         color: rgba(255, 255, 255, 0.7);
       }
-    `}
+    }
   }
 `
