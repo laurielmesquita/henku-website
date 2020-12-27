@@ -9,7 +9,7 @@ export const HeroMediaWrapper = styled.section`
   text-align: center;
   padding: calc(10vw + 6px) 0;
   margin: 0 auto;
-  background-color: aliceblue;
+  background-color: var(--deepDark);
 `
 
 export const HeroMediaSource = styled.video`

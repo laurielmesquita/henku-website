@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
     --highlight: #526af2;
     --theme: #5D6494;
     --themeDark: #414771;
+    --deepDark: #292b3d;
     --visited: #5d6494;
   }
   *,

@@ -9,9 +9,9 @@ export const HeroMediaContent = styled.div`
   color: #fff;
   max-width: 49%;
   margin: 0 auto;
-  padding: 3.75rem calc(3.75rem * 2);
-  backdrop-filter: saturate(180%) blur(16px);
-  background-color: rgba(0, 0, 0, 0.4);
+  padding: 3.75rem calc(2.75rem * 2);
+  background-color: hsla(0, 0%, 0%, 0.4);
+  backdrop-filter: saturate(180%) blur(20px);
 `
 
 export const HeroMediaTitle = styled.h1`
