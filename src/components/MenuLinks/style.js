@@ -6,7 +6,7 @@ export const MenuLinksInput = styled.input`
 
   @media (max-width: 991.98px) {
     &:checked ~ label .menu {
-      box-shadow: 0 0 0 130vw var(--theme), 0 0 0 130vh var(--theme);
+      box-shadow: 0 0 0 130vw var(--deepDark), 0 0 0 130vh var(--deepDark);
     }
     &:checked ~ label .hamburger {
       transform: rotate(45deg);
