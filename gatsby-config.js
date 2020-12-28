@@ -12,7 +12,7 @@ module.exports = {
           google: [
             {
               family: 'Montserrat',
-              variants: ['400']
+              variants: ['400', '500']
             },
             {
               family: 'Poppins',

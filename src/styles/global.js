@@ -11,6 +11,7 @@ const GlobalStyles = createGlobalStyle`
     --themeDark: #414771;
     --deepDark: #292b3d;
     --visited: #5d6494;
+    --lightGreen: #e1f25e;
   }
   *,
   *::before,

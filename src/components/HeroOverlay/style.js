@@ -23,4 +23,5 @@ export const HeroMediaParagraph = styled.p`
   line-height: 1.4;
   padding: 0 3.75rem;
   opacity: 0.83;
+  margin-bottom: 2.5rem;
 `

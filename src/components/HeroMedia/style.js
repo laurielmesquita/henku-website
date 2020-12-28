@@ -4,6 +4,7 @@ export const HeroMediaWrapper = styled.section`
   position: relative;
   overflow: hidden;
   width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   text-align: center;
