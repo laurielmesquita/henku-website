@@ -8,12 +8,10 @@ const HeroMedia = ({ srcMedia, heroTitle, heroInfo, heroBtnTitle, slug }) => (
   <HeroMediaWrapper>
     <HeroMediaSource
       src={srcMedia}
-      className='video-player'
       loop
       muted
       autoPlay
-      playsinline
-      preload='auto'
+      playsInline
       type='video/mp4'
     />
     <HeroOverlay
