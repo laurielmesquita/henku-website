@@ -12,6 +12,8 @@ const HeroMedia = ({ srcMedia, heroTitle, heroInfo, heroBtnTitle, slug }) => (
       loop
       muted
       autoPlay
+      playsinline
+      preload='auto'
       type='video/mp4'
     />
     <HeroOverlay
