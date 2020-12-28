@@ -9,23 +9,18 @@ import {
   HeroMediaTitle
 } from './style'
 
-const HeroOverlay = () => {
+const HeroOverlay = ({ heroTitle, heroInfo, heroBtnTitle, slug }) => {
   return (
     <HeroMediaOverlay>
       <HeroMediaContent>
-        <HeroMediaTitle>
-          Conteúdo mais importante Em uma chamada aqui
-        </HeroMediaTitle>
-        <HeroMediaParagraph>
-          Aqui um texto de apoio, descritivo que fortaleça o título e convide o
-          usuário para navegar.
-        </HeroMediaParagraph>
+        <HeroMediaTitle>{heroTitle}</HeroMediaTitle>
+        <HeroMediaParagraph>{heroInfo}</HeroMediaParagraph>
         <Button
-          slug='/about'
+          slug={slug}
           buttonClass='buttonDark'
           buttonTitle='Consulte um especialista'
         >
-          Consulte um especialista
+          {heroBtnTitle}
         </Button>
       </HeroMediaContent>
     </HeroMediaOverlay>

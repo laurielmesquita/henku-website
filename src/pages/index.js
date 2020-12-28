@@ -6,10 +6,19 @@ import Container from '../components/Container'
 import HeroMedia from '../components/HeroMedia'
 import Button from '../components/Button'
 
+import video from '../images/henku-home.mp4'
+
 const IndexPage = () => (
   <Layout>
     <SEO title='Home' />
-    <HeroMedia />
+    <HeroMedia
+      heroTitle='Conteúdo mais importante Em uma chamada aqui'
+      heroInfo='Aqui um texto de apoio, descritivo que fortaleça o título e convide o
+      usuário para navegar'
+      heroBtnTitle='Fale com um especialista'
+      slug='#contact'
+      srcMedia={video}
+    />
     <Container>
       <h1>Homepage</h1>
       <p>
@@ -20,6 +29,12 @@ const IndexPage = () => (
         >
           Teste de botão
         </Button>
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam aliquam
+        quam commodi ea illo soluta natus voluptatem cupiditate, a ab fugiat
+        minima alias placeat accusantium? Cupiditate, sapiente fugit. Veniam,
+        commodi.
       </p>
     </Container>
   </Layout>

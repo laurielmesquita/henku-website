@@ -2,21 +2,24 @@ import React from 'react'
 
 import HeroOverlay from '../HeroOverlay'
 
-import video from '../../images/henku-home.mp4'
-
 import { HeroMediaWrapper, HeroMediaSource } from './style'
 
-const HeroMedia = () => (
+const HeroMedia = ({ srcMedia, heroTitle, heroInfo, heroBtnTitle, slug }) => (
   <HeroMediaWrapper>
     <HeroMediaSource
-      src={video}
+      src={srcMedia}
       className='video-player'
       loop
       muted
       autoPlay
       type='video/mp4'
     />
-    <HeroOverlay />
+    <HeroOverlay
+      heroTitle={heroTitle}
+      heroInfo={heroInfo}
+      heroBtnTitle={heroBtnTitle}
+      slug={slug}
+    />
   </HeroMediaWrapper>
 )
 

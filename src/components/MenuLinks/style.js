@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 export const MenuLinksInput = styled.input`
   display: none;
 
-  @media only screen and (max-width: 991px) {
+  @media (max-width: 991.98px) {
     &:checked ~ label .menu {
       box-shadow: 0 0 0 130vw var(--theme), 0 0 0 130vh var(--theme);
     }
@@ -27,18 +27,18 @@ export const MenuLinksInput = styled.input`
 `
 
 export const MenuLinksLabel = styled.label`
-  @media only screen and (max-width: 991px) {
+  @media (max-width: 991.98px) {
     .menu {
       border-radius: 50%;
       background: var(--theme);
-      top: 15px;
-      box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+      top: 11px;
+      right: 15px;
       cursor: pointer;
+      width: 50px;
       height: 50px;
       position: absolute;
-      right: 15px;
+      box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
       transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
-      width: 50px;
       z-index: 2;
 
       &:hover {
@@ -97,7 +97,7 @@ export const Container = styled.nav`
     }
   }
 
-  @media only screen and (min-width: 992px) {
+  @media (min-width: 992px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,14 +105,14 @@ export const Container = styled.nav`
 `
 
 export const MenuLinksList = styled.ul`
-  @media only screen and (min-width: 992px) {
+  @media (min-width: 992px) {
     display: flex;
     padding-right: 0.9375rem;
     flex-direction: row;
     justify-content: space-around;
   }
 
-  @media only screen and (max-width: 991px) {
+  @media (max-width: 991.98px) {
     width: 88%;
     padding-right: 0;
     position: absolute;
@@ -136,7 +136,7 @@ export const MenuLinksItem = styled.li`
   justify-content: center;
   align-items: center;
 
-  @media only screen and (max-width: 991px) {
+  @media (max-width: 991.98px) {
     width: 100%;
     text-align: center;
     margin-bottom: 3rem;
@@ -146,7 +146,7 @@ export const MenuLinksItem = styled.li`
     }
   }
 
-  @media only screen and (max-width: 335px) {
+  @media (max-width: 335px) {
     margin-bottom: 2.5rem;
   }
 `
@@ -164,7 +164,7 @@ export const MenuLinksLink = styled(Link)`
     color: var(--highlight);
   }
 
-  @media only screen and (max-width: 991px) {
+  @media (max-width: 991.98px) {
     margin: 0;
     color: rgba(255, 255, 255, 1);
 
@@ -174,7 +174,7 @@ export const MenuLinksLink = styled(Link)`
     }
   }
 
-  @media only screen and (min-width: 992px) {
+  @media (min-width: 992px) {
     margin-right: 3.75rem;
   }
 `
