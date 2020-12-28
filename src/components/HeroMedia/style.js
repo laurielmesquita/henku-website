@@ -15,6 +15,10 @@ export const HeroMediaWrapper = styled.section`
   @media (max-width: 575.98px) {
     padding: calc(7vh + 6px) 0;
   }
+
+  @media (max-width: 320.98px) {
+    padding: calc(5vh + 6px) 0;
+  }
 `
 
 export const HeroMediaSource = styled.video`

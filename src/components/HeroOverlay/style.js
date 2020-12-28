@@ -17,6 +17,10 @@ export const HeroMediaContent = styled.div`
     max-width: 85%;
     padding: 3.75rem calc(1.125rem * 2);
   }
+
+  @media (max-width: 375.98px) {
+    padding: 2.3rem 1.75rem;
+  }
 `
 
 export const HeroMediaTitle = styled.h1`
@@ -24,6 +28,11 @@ export const HeroMediaTitle = styled.h1`
 
   @media (max-width: 575.98px) {
     font-size: calc(1.375rem + 1vw);
+  }
+
+  @media (max-width: 375.98px) {
+    margin-bottom: 1.375rem;
+    font-size: calc(1.2rem + 0.5vw);
   }
 `
 
@@ -37,5 +46,10 @@ export const HeroMediaParagraph = styled.p`
   @media (max-width: 575.98px) {
     font-size: calc(1.375rem - 0.7vw);
     padding: 0;
+  }
+
+  @media (max-width: 375.98px) {
+    margin-bottom: 2rem;
+    font-size: 1rem;
   }
 `

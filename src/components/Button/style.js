@@ -53,6 +53,11 @@ export const ButtonWrapper = styled(Link)`
     font-size: 1rem;
   }
 
+  @media (max-width: 375.98px) {
+    font-size: 0.759rem;
+    padding: 1.25rem;
+  }
+
   @keyframes change-color-light {
     0% {
       background-color: hsla(231, 35%, 92%, 0);
