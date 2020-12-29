@@ -12,12 +12,12 @@ export const HeroMediaWrapper = styled.section`
   margin: 0 auto;
   background-color: var(--deepDark);
 
-  @media (max-width: 575.98px) {
-    padding: calc(7vh + 6px) 0;
-  }
-
   @media (max-width: 320.98px) {
     padding: calc(5vh + 6px) 0;
+  }
+
+  @media (max-width: 575.98px) {
+    padding: calc(7vh + 6px) 0;
   }
 `
 

@@ -7,19 +7,40 @@ export const HeroMediaOverlay = styled.div`
 
 export const HeroMediaContent = styled.div`
   color: #fff;
-  max-width: 49%;
+
   margin: 0 auto;
-  padding: 3.75rem calc(2.75rem * 2);
   background-color: hsla(0, 0%, 0%, 0.4);
   backdrop-filter: saturate(180%) blur(20px);
 
+  @media (max-width: 1199.98px) {
+    max-width: 65%;
+    padding: 3.75rem calc(1.725rem * 2);
+  }
+
+  @media (max-width: 991.98px) {
+    max-width: 80%;
+    padding: 3.75rem calc(1.125rem * 2);
+  }
+
+  @media (max-width: 767.98px) {
+  }
+
   @media (max-width: 575.98px) {
     max-width: 85%;
-    padding: 3.75rem calc(1.125rem * 2);
+    padding: 3.5rem calc(1.125rem * 2);
   }
 
   @media (max-width: 375.98px) {
     padding: 2.3rem 1.75rem;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 66%;
+    padding: 3.75rem calc(2.125rem * 2);
+  }
+
+  @media (min-width: 1386px) {
+    max-width: 56%;
   }
 `
 
@@ -43,13 +64,17 @@ export const HeroMediaParagraph = styled.p`
   opacity: 0.83;
   margin-bottom: 2.5rem;
 
+  @media (max-width: 375.98px) {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
   @media (max-width: 575.98px) {
     font-size: calc(1.375rem - 0.7vw);
     padding: 0;
   }
 
-  @media (max-width: 375.98px) {
-    margin-bottom: 2rem;
-    font-size: 1rem;
+  @media (min-width: 1386px) {
+    padding: 0 2.25rem;
   }
 `
