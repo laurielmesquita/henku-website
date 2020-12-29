@@ -42,6 +42,11 @@ export const HeroMediaContent = styled.div`
   @media (min-width: 1386px) {
     max-width: 56%;
   }
+
+  @media (min-width: 1685px) {
+    max-width: 49%;
+    padding: 3.75rem calc(5.5rem);
+  }
 `
 
 export const HeroMediaTitle = styled.h1`
