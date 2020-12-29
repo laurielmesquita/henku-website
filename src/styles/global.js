@@ -63,7 +63,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: calc(1.375rem + 1.5vw);
   }
   h2 {
-    font-size: calc(1.325rem + .9vw);
+    font-size: calc(1.325rem + .774vw);
   }
   h3 {
     font-size: calc(1.3rem + .6vw);
