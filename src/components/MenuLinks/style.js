@@ -5,34 +5,37 @@ export const MenuLinksInput = styled.input`
   display: none;
 
   @media (max-width: 991.98px) {
-    &:checked ~ label .menu {
-      box-shadow: 0 0 0 130vw var(--deepDark), 0 0 0 130vh var(--deepDark);
+    &:checked ~ label .menuBox {
+      position: fixed;
+      box-shadow: 0 0 0 140vw var(--deepDark), 0 0 0 140vh var(--deepDark);
     }
-    &:checked ~ label .hamburger {
+    &:checked ~ label .menuBtn {
       transform: rotate(45deg);
     }
-    &:checked ~ label .hamburger:after {
+    &:checked ~ label .menuBtn:after {
       transform: rotate(90deg);
       bottom: 0;
     }
-    &:checked ~ label .hamburger:before {
+    &:checked ~ label .menuBtn:before {
       transform: rotate(90deg);
       top: 0;
     }
     &:checked ~ nav ul {
       opacity: 1;
       visibility: visible;
+      z-index: 2;
     }
   }
 `
 
 export const MenuLinksLabel = styled.label`
   @media (max-width: 991.98px) {
-    .menu {
+    .menuBox {
+      position: fixed;
       border-radius: 50%;
       background: var(--theme);
       top: 11px;
-      right: 15px;
+      right: 10px;
       cursor: pointer;
       width: 50px;
       height: 50px;
@@ -45,7 +48,7 @@ export const MenuLinksLabel = styled.label`
         box-shadow: 0 0 0 8px #fff, 0 0 0 8px #fff;
       }
 
-      .hamburger {
+      .menuBtn {
         position: relative;
         top: 24px;
         left: 13px;
@@ -115,7 +118,7 @@ export const MenuLinksList = styled.ul`
   @media (max-width: 991.98px) {
     width: 88%;
     padding-right: 0;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -124,9 +127,9 @@ export const MenuLinksList = styled.ul`
     font-size: calc(32px + (60 - 32) * (100vw - 300px) / (1386 - 300));
     line-height: 1.2;
     opacity: 0;
-    /* transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02); */
+    transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02);
     visibility: hidden;
-    z-index: 2;
+    z-index: -2;
   }
 `
 
