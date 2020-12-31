@@ -8,16 +8,24 @@ export const HeroMediaWrapper = styled.section`
   display: flex;
   align-items: center;
   text-align: center;
-  padding: calc(10vh + 6px) 0;
+  padding: calc(5vh + 6px) 0;
   margin: 0 auto;
   background-color: var(--deepDark);
 
-  @media (max-width: 320.98px) {
-    padding: calc(5vh + 6px) 0;
+  @media (min-width: 576px) {
+    padding: calc(7vh + 6px) 0;
   }
 
-  @media (max-width: 575.98px) {
-    padding: calc(7vh + 6px) 0;
+  @media (min-width: 768px) {
+    padding: calc(10vh + 6px) 0;
+  }
+
+  @media (min-width: 992px) {
+    padding: calc(13vh + 6px) 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding: calc(14vh + 6px) 0;
   }
 `
 
