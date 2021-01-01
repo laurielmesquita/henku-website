@@ -41,8 +41,6 @@ export const ButtonWrapper = styled(Link)`
   }
 
   &.buttonDark:hover {
-    /* color: #000; */
-
     &::before {
       animation: change-color-dark 3s ease 0s infinite normal;
       border: 4px solid var(--lightGreen);

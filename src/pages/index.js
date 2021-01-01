@@ -19,7 +19,7 @@ const IndexPage = () => (
       slug='#contact'
       srcMedia={video}
     />
-    <Container>
+    <Container nameOfClass='verticalSpacer'>
       <Heading
         headingTitle='Um título que menciona rapidamente os dois serviços em duas linhas'
         headingInfo='Aqui um texto que reforce a ideia sobre os dois serviços ambiguamente'

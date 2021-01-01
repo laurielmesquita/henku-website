@@ -63,7 +63,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: calc(1.375rem + 1.5vw);
   }
   h2 {
-    font-size: calc(1.325rem + .774vw);
+    font-size: calc(1.325rem + .7709vw);
   }
   h3 {
     font-size: calc(1.3rem + .6vw);
@@ -76,6 +76,10 @@ const GlobalStyles = createGlobalStyle`
   }
   h6 {
     font-size: 1rem;
+  }
+
+  .verticalSpacer {
+    padding: calc(13vh + 6px) 0;
   }
 `
 export default GlobalStyles

@@ -25,7 +25,7 @@ export const HeroMediaWrapper = styled.section`
   }
 
   @media (min-width: 1200px) {
-    padding: calc(14vh + 6px) 0;
+    padding: calc(13vh + 6px) 0;
   }
 `
 

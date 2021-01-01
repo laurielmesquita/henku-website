@@ -12,7 +12,7 @@ const DataSciencePage = () => (
     <SEO title='Data Science' />
     <HeroMedia
       heroTitle='Data Science'
-      heroInfo='Subtítulo descritivo e elusivo sobre Data Science'
+      heroInfo='Aqui um texto de apoio, descritivo que fortaleça o título e convide o usuário para navegar.'
       heroBtnTitle='Fale com um especialista'
       slug='#contact'
       srcMedia={video}
