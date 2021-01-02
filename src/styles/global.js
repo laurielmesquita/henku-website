@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
     --highlight: #526af2;
     --theme: #5D6494;
     --themeDark: #414771;
+    --themeLight: #A9B4F4;
     --deepDark: #292b3d;
     --visited: #5d6494;
     --lightGreen: #e1f25e;
@@ -79,7 +80,23 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .verticalSpacer {
-    padding: calc(13vh + 6px) 0;
+    padding: calc(5vh + 6px) 0;
+
+    @media (min-width: 576px) {
+      padding: calc(7vh + 6px) 0;
+    }
+
+    @media (min-width: 768px) {
+      padding: calc(10vh + 6px) 0;
+    }
+
+    @media (min-width: 992px) {
+      padding: calc(13vh + 6px) 0;
+    }
+
+    @media (min-width: 1200px) {
+      padding: calc(13vh + 6px) 0;
+    }
   }
 `
 export default GlobalStyles

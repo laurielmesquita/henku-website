@@ -2,6 +2,23 @@ import styled from 'styled-components'
 
 export const HeadingWrapper = styled.div`
   text-align: center;
+  margin-bottom: calc(5vh + 6px);
+
+  @media (min-width: 576px) {
+    margin-bottom: calc(7vh + 6px);
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: calc(10vh + 6px);
+  }
+
+  @media (min-width: 992px) {
+    margin-bottom: calc(13vh + 6px);
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: calc(13vh + 6px);
+  }
 `
 
 export const HeadingHead = styled.h2`

@@ -7,6 +7,7 @@ import HeroMedia from '../components/HeroMedia'
 import Heading from '../components/Heading'
 
 import video from '../images/henku-home.mp4'
+import DarkBox from '../components/DarkBox'
 
 const IndexPage = () => (
   <Layout>
@@ -24,6 +25,7 @@ const IndexPage = () => (
         headingTitle='Um título que menciona rapidamente os dois serviços em duas linhas'
         headingInfo='Aqui um texto que reforce a ideia sobre os dois serviços ambiguamente'
       />
+      <DarkBox />
     </Container>
   </Layout>
 )
