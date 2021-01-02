@@ -4,6 +4,7 @@ import reset from 'styled-reset-advanced'
 const GlobalStyles = createGlobalStyle`
   ${reset}
   :root {
+    font-size: 16px;
     --container: 1386px;
     --brand: #4453a6;
     --highlight: #526af2;
@@ -64,7 +65,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: calc(1.375rem + 1.5vw);
   }
   h2 {
-    font-size: calc(1.325rem + .7709vw);
+    font-size: calc(1.325rem + .770vw);
   }
   h3 {
     font-size: calc(1.3rem + .6vw);
@@ -80,22 +81,18 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .verticalSpacer {
-    padding: calc(5vh + 6px) 0;
+    padding: calc(13vw + 6px) 0;
 
     @media (min-width: 576px) {
-      padding: calc(7vh + 6px) 0;
+      padding: 5rem 0;
     }
 
     @media (min-width: 768px) {
-      padding: calc(10vh + 6px) 0;
+      padding: 5.25rem 0;
     }
 
     @media (min-width: 992px) {
-      padding: calc(13vh + 6px) 0;
-    }
-
-    @media (min-width: 1200px) {
-      padding: calc(13vh + 6px) 0;
+      padding: 6.25rem 0;
     }
   }
 `
