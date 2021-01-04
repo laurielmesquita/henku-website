@@ -50,14 +50,12 @@ export const HeadingHead = styled.h2`
   }
 
   @media (min-width: 1200px) {
-    width: 54.2%;
-  }
-
-  @media (min-width: 1400px) {
-    width: 50%;
+    width: 55%;
   }
 `
 export const HeadingInfo = styled.p`
+  width: 56%;
+  margin: 0 auto;
   color: var(--theme);
   font-size: calc(1rem + 0.33vw);
 `

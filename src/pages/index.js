@@ -27,6 +27,14 @@ const IndexPage = () => (
       />
       <DarkBox />
     </Container>
+    <div className='containerWide gradientTopBottom'>
+      <Container nameOfClass='verticalSpacer'>
+        <Heading
+          headingTitle='Conteúdo de relevância secundária aqui'
+          headingInfo='Aqui um texto de apoio, descritivo que fortaleça o título e convide o usuário para navegar'
+        />
+      </Container>
+    </div>
   </Layout>
 )
 

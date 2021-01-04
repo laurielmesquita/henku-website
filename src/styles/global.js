@@ -65,7 +65,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: calc(1.375rem + 1.5vw);
   }
   h2 {
-    font-size: calc(1.325rem + .770vw);
+    font-size: calc(1.325rem + .7709vw);
   }
   h3 {
     font-size: calc(1.3rem + .6vw);
@@ -78,6 +78,19 @@ const GlobalStyles = createGlobalStyle`
   }
   h6 {
     font-size: 1rem;
+  }
+
+  .containerWide {
+    width: 100%;
+  }
+
+  .gradientTopBottom {
+    background: linear-gradient(#e4e6f1 0%, #FFF 100%);
+    
+    &.inverse {
+      
+      background: linear-gradient(#FFF 0%, #e4e6f1 100%);
+    }
   }
 
   .verticalSpacer {
@@ -93,6 +106,14 @@ const GlobalStyles = createGlobalStyle`
 
     @media (min-width: 992px) {
       padding: 6.25rem 0;
+    }
+    
+    @media (min-width: 1200px) {
+      padding: 8.25rem 0;
+    }
+    
+    @media (min-width: 1386px) {
+      padding: 10rem 0;
     }
   }
 `
