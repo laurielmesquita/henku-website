@@ -4,8 +4,8 @@ import { Link } from 'gatsby'
 export const ButtonWrapper = styled(Link)`
   position: relative;
   display: inline-block;
-  padding: 1.25rem 2.125rem;
-  font-size: 0.759rem;
+  padding: 1rem 2rem;
+  font-size: 0.869rem;
   font-family: Montserrat, sans-serif;
   background-color: transparent;
   z-index: 0;
@@ -45,6 +45,10 @@ export const ButtonWrapper = styled(Link)`
       animation: change-color-dark 3s ease 0s infinite normal;
       border: 4px solid var(--lightGreen);
     }
+  }
+
+  @media (min-width: 376px) {
+    padding: 1.25rem 2.125rem;
   }
 
   @media (min-width: 576px) {
