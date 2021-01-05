@@ -5,7 +5,6 @@ export const DarkBoxWrapper = styled.div`
   display: grid;
   grid-column-gap: 66px;
   grid-row-gap: 66px;
-  grid-template-columns: repeat(2, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 
   @media (max-width: 639px) {
@@ -39,7 +38,7 @@ export const DarkBoxTag = styled.span`
   margin-bottom: 0.75rem;
 `
 
-export const DarkBoxHead = styled.h4`
+export const DarkBoxHead = styled.h3`
   font-size: calc(1.275rem + 0.4vw);
   font-weight: 400;
   padding-right: 2.5rem;

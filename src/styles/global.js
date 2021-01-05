@@ -22,6 +22,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    color: var(--theme);
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
@@ -80,6 +81,28 @@ const GlobalStyles = createGlobalStyle`
     font-size: 1rem;
   }
 
+  // Helpers
+  .textCenter {
+    text-align: center;
+  }
+
+  .mgTop-100 {
+    margin-top: 3.75rem;
+
+    @media (min-width: 768px) {
+      margin-top: 4rem;
+    }
+
+    @media (min-width: 992px) {
+      margin-top: 4.725rem;
+    }
+
+    @media (min-width: 1200px) {
+      margin-top: 6.25rem;
+    }
+  }
+
+  // Grid
   .containerWide {
     width: 100%;
   }

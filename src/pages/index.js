@@ -8,6 +8,7 @@ import Heading from '../components/Heading'
 
 import video from '../images/henku-home.mp4'
 import DarkBox from '../components/DarkBox'
+import ThreeColumnsGrid from '../components/ThreeColumnsGrid'
 
 const IndexPage = () => (
   <Layout>
@@ -33,6 +34,7 @@ const IndexPage = () => (
           headingTitle='Conteúdo de relevância secundária aqui'
           headingInfo='Aqui um texto de apoio, descritivo que fortaleça o título e convide o usuário para navegar'
         />
+        <ThreeColumnsGrid />
       </Container>
     </div>
   </Layout>

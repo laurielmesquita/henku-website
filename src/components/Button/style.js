@@ -7,6 +7,8 @@ export const ButtonWrapper = styled(Link)`
   padding: 1.25rem 2.125rem;
   font-size: 0.759rem;
   font-family: Montserrat, sans-serif;
+  background-color: transparent;
+  z-index: 0;
 
   &::before {
     content: '';
@@ -28,8 +30,6 @@ export const ButtonWrapper = styled(Link)`
   }
 
   &.buttonLight:hover {
-    /* color: var(--themeDark); */
-
     &::before {
       animation: change-color-light 3s ease 0s infinite normal;
     }
