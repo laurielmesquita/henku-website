@@ -5,7 +5,7 @@ export const ButtonWrapper = styled(Link)`
   position: relative;
   display: inline-block;
   padding: 1rem 2rem;
-  font-size: 0.869rem;
+  font-size: 1rem;
   font-family: Montserrat, sans-serif;
   background-color: transparent;
   z-index: 0;
@@ -47,12 +47,8 @@ export const ButtonWrapper = styled(Link)`
     }
   }
 
-  @media (min-width: 376px) {
-    padding: 1.25rem 2.125rem;
-  }
-
   @media (min-width: 576px) {
-    font-size: 1rem;
+    padding: 1.25rem 2.125rem;
   }
 
   @keyframes change-color-light {
