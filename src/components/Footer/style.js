@@ -27,6 +27,23 @@ export const FooterWrapper = styled.footer`
   }
 `
 
+export const FooterNav = styled.nav`
+  max-width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: 375px) {
+    max-width: 320px;
+  }
+
+  @media (min-width: 576px) {
+    max-width: 500px;
+  }
+
+  @media (min-width: 670px) {
+    max-width: 608px;
+  }
+`
+
 export const Copyright = styled.div`
   position: relative;
 

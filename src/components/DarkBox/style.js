@@ -44,7 +44,7 @@ export const DarkBoxHead = styled.h3`
   padding-right: 2.5rem;
   margin-bottom: 2.5rem;
 
-  @media (max-width: 639px) {
+  @media (max-width: 669.98px) {
     padding-right: 0;
   }
 
