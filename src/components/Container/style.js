@@ -11,8 +11,6 @@ export const ContainerWrapper = styled.section`
 export const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-right: -0.9375rem;
-  margin-left: -0.9375rem;
 
   & > * {
     flex-shrink: 0;

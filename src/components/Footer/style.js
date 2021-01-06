@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 export const FooterWrapper = styled.footer`
-  display: flex;
-  flex-direction: row;
   color: #fff;
   text-align: center;
   background-color: var(--deepDark);
