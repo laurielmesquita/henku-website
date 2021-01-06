@@ -22,6 +22,10 @@ export const HeadingHead = styled.h2`
   margin: 0 auto 1.25rem;
   color: var(--themeDark);
 
+  .dark & {
+    color: #fff;
+  }
+
   @media (max-width: 576px) {
     font-size: calc(1.125rem + 0.6vw);
   }
@@ -39,6 +43,10 @@ export const HeadingInfo = styled.p`
   margin: 0 auto;
   color: var(--theme);
   font-size: calc(1rem + 0.33vw);
+
+  .dark & {
+    color: hsla(0, 0%, 100%, 0.75);
+  }
 
   @media (min-width: 992px) {
     width: 56%;
