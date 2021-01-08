@@ -5,10 +5,10 @@ import SEO from '../components/seo'
 import Container from '../components/Container'
 import HeroMedia from '../components/HeroMedia'
 import Heading from '../components/Heading'
-
 import video from '../images/henku-home.mp4'
 import DarkBox from '../components/DarkBox'
 import ThreeColumnsGrid from '../components/ThreeColumnsGrid'
+import Button from '../components/Button'
 
 const IndexPage = () => (
   <Layout>
@@ -28,13 +28,22 @@ const IndexPage = () => (
       />
       <DarkBox />
     </Container>
-    <div className='containerWide gradientTopBottom'>
+    <div className='gradientHenku'>
       <Container nameOfClass='verticalSpacer'>
         <Heading
           headingTitle='Conteúdo de relevância secundária aqui'
           headingInfo='Aqui um texto de apoio, descritivo que fortaleça o título e convide o usuário para navegar'
         />
         <ThreeColumnsGrid />
+        <p className='textCenter mgTop-100'>
+          <Button
+            slug='/about'
+            buttonClass='buttonLight'
+            buttonTitle='Saiba mais sobre a Henku'
+          >
+            Saiba mais sobre a Henku
+          </Button>
+        </p>
       </Container>
     </div>
   </Layout>

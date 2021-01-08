@@ -102,12 +102,15 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  // Grid
-  .containerWide {
-    width: 100%;
+  .highlightInfo {
+    display: inline-block;
+    max-width: 1150px;
+    margin: 0 auto;
+    font-size: 1.625rem;
+    font-size: calc(1.145rem + .4vw);
   }
 
-  .gradientTopBottom {
+  .gradientHenku {
     background: linear-gradient(#e4e6f1 0%, #FFF 100%);
     
     &.inverse {

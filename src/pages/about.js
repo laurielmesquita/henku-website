@@ -1,9 +1,11 @@
 import React from 'react'
-import Container from '../components/Container'
 
 import SEO from '../components/seo'
 import Layout from '../components/Layout'
+import Container from '../components/Container'
 import HeroMedia from '../components/HeroMedia'
+import Heading from '../components/Heading'
+import ThreeColumnsGrid from '../components/ThreeColumnsGrid'
 
 import video from '../images/henku-about.mp4'
 
@@ -17,8 +19,28 @@ const AboutPage = () => (
       slug='#contact'
       srcMedia={video}
     />
-    <Container>
-      <h1>Sobre Nós</h1>
+    <div className='gradientHenku inverse'>
+      <Container nameOfClass='verticalSpacer'>
+        <Heading
+          headingTitle='Um título sobre a Henku'
+          headingInfo='Aqui um texto que reforce a ideia sobre do título com até 2 linhas'
+        />
+        <p className='highlightInfo'>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.
+        </p>
+      </Container>
+    </div>
+    <Container nameOfClass='verticalSpacer'>
+      <Heading
+        headingTitle='Conteúdo de relevância secundária aqui'
+        headingInfo='Aqui um texto de apoio, descritivo que fortaleça o título e convide o usuário para navegar'
+      />
+      <ThreeColumnsGrid />
     </Container>
   </Layout>
 )
