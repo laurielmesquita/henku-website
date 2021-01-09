@@ -34,7 +34,7 @@ const IndexPage = () => (
           headingTitle='Conteúdo de relevância secundária aqui'
           headingInfo='Aqui um texto de apoio, descritivo que fortaleça o título e convide o usuário para navegar'
         />
-        <ThreeColumnsGrid />
+        <ThreeColumnsGrid contentId='home' />
         <p className='textCenter mgTop-100'>
           <Button
             slug='/about'

@@ -11,9 +11,9 @@ import {
   ThreeColumnInfo
 } from './style'
 
-const ThreeColumnsGrid = () => (
+const ThreeColumnsGrid = ({ contentId }) => (
   <ThreeColumnWrapper>
-    {contents.map((content, i) => {
+    {contents[contentId].map((content, i) => {
       const Icon = Icons[content.icon]
 
       return (

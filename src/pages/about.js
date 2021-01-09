@@ -37,10 +37,10 @@ const AboutPage = () => (
     </div>
     <Container nameOfClass='verticalSpacer'>
       <Heading
-        headingTitle='Conteúdo de relevância secundária aqui'
+        headingTitle='Nossos valores'
         headingInfo='Aqui um texto de apoio, descritivo que fortaleça o título e convide o usuário para navegar'
       />
-      <ThreeColumnsGrid />
+      <ThreeColumnsGrid contentId='about' />
     </Container>
   </Layout>
 )
