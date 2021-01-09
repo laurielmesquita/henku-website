@@ -22,8 +22,8 @@ const AboutPage = () => (
     <div className='gradientHenku inverse'>
       <Container nameOfClass='verticalSpacer'>
         <Heading
-          headingTitle='Um título sobre a Henku'
-          headingInfo='Aqui um texto que reforce a ideia sobre do título com até 2 linhas'
+          headingTitle='Saiba um pouco sobre a nossa história'
+          headingInfo='Aqui um texto que reforce a ideia sobre do título em uma linha'
         />
         <p className='highlightInfo'>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam

@@ -66,5 +66,6 @@ export const Copyright = styled.div`
 
   small {
     font-size: 0.8125rem;
+    opacity: 0.75;
   }
 `
