@@ -38,6 +38,7 @@ export const HeadingHead = styled.h2`
     width: 55%;
   }
 `
+
 export const HeadingInfo = styled.p`
   width: 90%;
   margin: 0 auto;

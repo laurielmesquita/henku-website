@@ -103,12 +103,12 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .highlightInfo {
+    text-align: center;
     display: inline-block;
     max-width: 1150px;
     margin: 0 auto;
     padding: 0 1.875rem;
-    font-size: 1.625rem;
-    font-size: calc(1.145rem + .4vw);
+    font-size: calc(1.1rem + .4vw);
   }
 
   .gradientHenku {
