@@ -1,25 +1,30 @@
 import React from 'react'
 
-import { AltBoxesWrapper, AltBoxesImage, AltBoxesInfo } from './style'
+import contents from './data'
 
-const AltBoxes = () => (
+import {
+  AltBoxesWrapper,
+  AltBoxesImage,
+  AltBoxesInfo,
+  AltBoxesHead,
+  AltBoxesDescription
+} from './style'
+
+const AltBoxes = ({ AltBoxesId }) => (
   <>
-    <AltBoxesWrapper>
-      <AltBoxesImage>
-        <h1>Bloco de imagem</h1>
-      </AltBoxesImage>
-      <AltBoxesInfo>
-        <h1>Bloco de texto</h1>
-      </AltBoxesInfo>
-    </AltBoxesWrapper>
-    <AltBoxesWrapper className='reverse'>
-      <AltBoxesImage>
-        <h1>Bloco de imagem</h1>
-      </AltBoxesImage>
-      <AltBoxesInfo>
-        <h1>Bloco de texto</h1>
-      </AltBoxesInfo>
-    </AltBoxesWrapper>
+    {contents[AltBoxesId].map((content, i) => {
+      return (
+        <AltBoxesWrapper key={i}>
+          <AltBoxesImage>
+            <img src={content.image} alt={content.title} />
+          </AltBoxesImage>
+          <AltBoxesInfo>
+            <AltBoxesHead>{content.title}</AltBoxesHead>
+            <AltBoxesDescription>{content.info}</AltBoxesDescription>
+          </AltBoxesInfo>
+        </AltBoxesWrapper>
+      )
+    })}
   </>
 )
 

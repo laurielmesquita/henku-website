@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Container from '../components/Container'
 import HeroMedia from '../components/HeroMedia'
 import Heading from '../components/Heading'
+import AltBoxes from '../components/AltBoxes'
 
 import video from '../images/henku-data-science.mp4'
 
@@ -39,6 +40,7 @@ const DataSciencePage = () => (
         headingTitle='Benefícios do Data Science'
         headingInfo='Aqui um texto de apoio, descritivo que fortaleça o título e convide o usuário para navegar'
       />
+      <AltBoxes AltBoxesId='data' />
     </Container>
   </Layout>
 )

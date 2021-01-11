@@ -40,7 +40,7 @@ const MachineLearningPage = () => (
         headingTitle='Benefícios do Machine Learning'
         headingInfo='Aqui um texto que reforce a ideia sobre do título em uma linha'
       />
-      <AltBoxes />
+      <AltBoxes AltBoxesId='machine' />
     </Container>
   </Layout>
 )
