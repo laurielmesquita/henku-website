@@ -30,8 +30,10 @@ export const ButtonWrapper = styled(Link)`
   }
 
   &.buttonLight:hover {
+    color: #fff;
+
     &::before {
-      animation: change-color-light 3s ease 0s infinite normal;
+      background-color: var(--highlight);
     }
   }
 
@@ -41,37 +43,16 @@ export const ButtonWrapper = styled(Link)`
   }
 
   &.buttonDark:hover {
+    color: var(--deepDark);
+    font-weight: 500;
+
     &::before {
-      animation: change-color-dark 3s ease 0s infinite normal;
       border: 4px solid var(--lightGreen);
+      background-color: var(--lightGreen);
     }
   }
 
   @media (min-width: 576px) {
     padding: 1.25rem 2.125rem;
-  }
-
-  @keyframes change-color-light {
-    0% {
-      background-color: hsla(231, 35%, 92%, 0);
-    }
-    50% {
-      background-color: hsla(231, 35%, 92%, 1);
-    }
-    100% {
-      background-color: hsla(231, 35%, 92%, 0);
-    }
-  }
-
-  @keyframes change-color-dark {
-    0% {
-      background-color: hsla(67, 85%, 66%, 0);
-    }
-    50% {
-      background-color: hsla(67, 85%, 66%, 0.2);
-    }
-    100% {
-      background-color: hsla(67, 85%, 66%, 0);
-    }
   }
 `
