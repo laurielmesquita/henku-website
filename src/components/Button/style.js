@@ -7,6 +7,7 @@ export const ButtonWrapper = styled(Link)`
   padding: 1rem 1.9rem;
   font-size: 1rem;
   font-family: Montserrat, sans-serif;
+  font-weight: 500;
   background-color: transparent;
   z-index: 0;
 
@@ -19,7 +20,6 @@ export const ButtonWrapper = styled(Link)`
     left: 0;
     width: 100%;
     height: 100%;
-    font-weight: 500;
     border: 4px solid var(--highlight);
     transition: color 0.3s, border 0.3s, background 1s;
     z-index: -1;
