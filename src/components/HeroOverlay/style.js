@@ -20,27 +20,23 @@ export const HeroMediaContent = styled.div`
 
   @media (min-width: 768px) {
     max-width: 80%;
-    padding: 3.75rem calc(2.25rem);
+    padding: 3.75rem;
   }
 
   @media (min-width: 992px) {
-    max-width: 70%;
-    padding: 3.75rem calc(1.725rem * 2);
+    width: 66.6666666667%;
   }
 
   @media (min-width: 1200px) {
-    max-width: 66%;
-    padding: 3.75rem calc(3.45rem);
+    width: 58.3333333333%;
   }
 
   @media (min-width: 1386px) {
-    max-width: 56%;
-    padding: 3.75rem calc(4.25rem);
+    padding: 4.25rem;
   }
 
   @media (min-width: 1685px) {
-    max-width: 49%;
-    padding: 3.75rem calc(5.5rem);
+    padding: 5.5rem;
   }
 `
 
@@ -61,35 +57,15 @@ export const HeroMediaTitle = styled.h1`
   @media (min-width: 768px) {
     font-size: calc(1.375rem + 1.5vw);
   }
-
-  @media (min-width: 992px) {
-    font-size: calc(1.375rem + 1.5vw);
-  }
 `
 
 export const HeroMediaParagraph = styled.p`
-  font-size: 1rem;
+  font-size: calc(1rem + 0.15vw);
   line-height: 1.4;
   margin-bottom: 2rem;
   opacity: 0.83;
 
   @media (min-width: 576px) {
     margin-bottom: 2.75rem;
-    font-size: calc(1.375rem - 0.7vw);
-  }
-
-  @media (min-width: 768px) {
-    padding: 0px 1.75rem;
-    font-size: calc(1.375rem - 0.3vw);
-  }
-
-  @media (min-width: 992px) {
-    font-size: calc(1.375rem - 0.1vw);
-    padding: 0px 2rem;
-  }
-
-  @media (min-width: 1200px) {
-    font-size: 1.375rem;
-    padding: 0px 2.25rem;
   }
 `

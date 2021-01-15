@@ -80,6 +80,11 @@ const GlobalStyles = createGlobalStyle`
   h6 {
     font-size: 1rem;
   }
+  
+  ::selection {
+    color: #FFF;
+    background: var(--highlight);
+  }
 
   // Helpers
   .textCenter {

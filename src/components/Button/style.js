@@ -20,13 +20,13 @@ export const ButtonWrapper = styled(Link)`
     left: 0;
     width: 100%;
     height: 100%;
-    border: 4px solid var(--highlight);
     transition: color 0.3s, border 0.3s, background 1s;
     z-index: -1;
   }
 
   &.buttonLight {
     color: var(--themeDark);
+    border: 4px solid var(--highlight);
   }
 
   &.buttonLight:hover {
@@ -39,13 +39,13 @@ export const ButtonWrapper = styled(Link)`
 
   &.buttonDark {
     color: #fff;
+    border: 4px solid var(--lightGreen);
   }
 
   &.buttonDark:hover {
     color: var(--deepDark);
 
     &::before {
-      border: 4px solid var(--lightGreen);
       background-color: var(--lightGreen);
     }
   }

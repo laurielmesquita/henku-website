@@ -3,21 +3,9 @@ import { Link } from 'gatsby'
 
 export const DarkBoxWrapper = styled.div`
   display: grid;
-  grid-column-gap: 66px;
-  grid-row-gap: 66px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-
-  @media (max-width: 639px) {
-    grid-row-gap: 30px;
-  }
-
-  @media (min-width: 576px) {
-    grid-column-gap: 30px;
-  }
-
-  @media (min-width: 992px) {
-    grid-column-gap: 66px;
-  }
 `
 
 export const DarkBoxContent = styled.div`
@@ -33,7 +21,6 @@ export const DarkBoxTag = styled.span`
   display: block;
   color: var(--themeLight);
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
   font-size: 1.125rem;
   margin-bottom: 0.75rem;
 `
@@ -41,6 +28,7 @@ export const DarkBoxTag = styled.span`
 export const DarkBoxHead = styled.h3`
   font-size: calc(1.275rem + 0.4vw);
   font-weight: 400;
+  line-height: 1.3;
   padding-right: 2.5rem;
   margin-bottom: 2.5rem;
 
@@ -63,4 +51,26 @@ export const DarkBoxLink = styled(Link)`
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   margin-top: auto;
+
+  svg {
+    will-change: transform;
+    overflow: hidden;
+    margin-left: 10px;
+    transition: transform 0.2s ease-in-out;
+    will-change: transform;
+
+    path:last-child {
+      will-change: transform;
+      transform-origin: right center;
+      transition: transform 0.2s ease-in-out;
+    }
+  }
+
+  &:hover svg {
+    transform: translateX(22%);
+
+    path:last-child {
+      transform: scaleX(1.3);
+    }
+  }
 `

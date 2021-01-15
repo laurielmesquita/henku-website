@@ -2,7 +2,11 @@ import styled from 'styled-components'
 
 export const HeadingWrapper = styled.div`
   text-align: center;
-  margin-bottom: 3.75rem;
+  margin: 0 auto 3.75rem;
+
+  @media (min-width: 576px) {
+    max-width: 83.3333333333%;
+  }
 
   @media (min-width: 768px) {
     margin-bottom: 4rem;
@@ -14,11 +18,11 @@ export const HeadingWrapper = styled.div`
 
   @media (min-width: 1200px) {
     margin-bottom: 6.25rem;
+    max-width: 66.6666666667%;
   }
 `
 
 export const HeadingHead = styled.h2`
-  width: 85%;
   margin: 0 auto 1.25rem;
   color: var(--themeDark);
 
@@ -29,27 +33,13 @@ export const HeadingHead = styled.h2`
   @media (max-width: 576px) {
     font-size: calc(1.125rem + 0.6vw);
   }
-
-  @media (min-width: 992px) {
-    width: 62%;
-  }
-
-  @media (min-width: 1200px) {
-    width: 55%;
-  }
 `
 
 export const HeadingInfo = styled.p`
-  width: 90%;
-  margin: 0 auto;
   color: var(--theme);
-  font-size: calc(1rem + 0.33vw);
+  font-size: calc(1rem + 0.15vw);
 
   .dark & {
     color: hsla(0, 0%, 100%, 0.75);
-  }
-
-  @media (min-width: 992px) {
-    width: 56%;
   }
 `

@@ -14,7 +14,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title='Home' />
     <HeroMedia
-      heroTitle='Conteúdo mais importante Em uma chamada aqui'
+      heroTitle='Conteúdo mais importante em uma chamada aqui'
       heroInfo='Aqui um texto de apoio, descritivo que fortaleça o título e convide o
       usuário para navegar'
       heroBtnTitle='Fale com um especialista'
