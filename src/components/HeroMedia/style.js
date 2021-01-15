@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const HeroMediaWrapper = styled.section`
   position: relative;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   align-items: center;
