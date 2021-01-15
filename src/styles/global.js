@@ -113,7 +113,7 @@ const GlobalStyles = createGlobalStyle`
     max-width: 1150px;
     margin: 0 auto;
     padding: 0 1.875rem;
-    font-size: calc(1rem + .4vw);
+    font-size: calc(1rem + .3vw);
   }
 
   .gradientHenku {

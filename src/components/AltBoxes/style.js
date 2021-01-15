@@ -107,7 +107,7 @@ export const AltBoxesImage = styled.div`
       display: inline-table;
       width: 100%;
       height: 100%;
-      background-color: var(--theme);
+      background-color: var(--brand);
       z-index: -1;
       transition: all 0.3s ease-in-out;
     }
@@ -128,6 +128,7 @@ export const AltBoxesInfo = styled.div`
 
 export const AltBoxesHead = styled.h3`
   margin-bottom: 1.5rem;
+  color: var(--brand);
 
   @media (min-width: 640px) {
     font-size: 1.8rem;

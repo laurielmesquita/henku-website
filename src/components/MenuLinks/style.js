@@ -7,6 +7,7 @@ export const MenuLinksInput = styled.input`
   @media (max-width: 991.98px) {
     &:checked ~ label .menuBox {
       position: fixed;
+      background-color: var(--theme);
       box-shadow: 0 0 0 140vw var(--deepDark), 0 0 0 140vh var(--deepDark);
     }
     &:checked ~ label .menuBtn {
@@ -33,7 +34,7 @@ export const MenuLinksLabel = styled.label`
     .menuBox {
       position: fixed;
       border-radius: 50%;
-      background: var(--brand);
+      background-color: var(--brand);
       top: 11px;
       right: 10px;
       cursor: pointer;

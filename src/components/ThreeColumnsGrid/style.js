@@ -31,6 +31,7 @@ export const ThreeColumnIcon = styled.span`
 
 export const ThreeColumnHead = styled.h4`
   margin-bottom: 1.125rem;
+  color: var(--brand);
 
   @media (min-width: 640px) {
     font-size: 1.5rem;
