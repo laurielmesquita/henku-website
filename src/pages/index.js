@@ -14,7 +14,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title='Home' />
     <HeroMedia
-      heroTitle='Conteúdo mais importante em uma chamada aqui'
+      heroTitle='Conteúdo mais importante aqui'
       heroInfo='Aqui um texto de apoio, descritivo que fortaleça o título e convide o
       usuário para navegar'
       heroBtnTitle='Fale com um especialista'
@@ -23,7 +23,7 @@ const IndexPage = () => (
     />
     <Container nameOfClass='verticalSpacer'>
       <Heading
-        headingTitle='Um título que menciona rapidamente os dois serviços em duas linhas'
+        headingTitle='Um título sobre os dois serviços aqui'
         headingInfo='Aqui um texto que reforce a ideia sobre os dois serviços ambiguamente'
       />
       <DarkBox />
@@ -31,7 +31,7 @@ const IndexPage = () => (
     <div className='gradientHenku'>
       <Container nameOfClass='verticalSpacer'>
         <Heading
-          headingTitle='Conteúdo de relevância secundária aqui'
+          headingTitle='Conteúdo de relevância secundária'
           headingInfo='Aqui um texto de apoio, descritivo que fortaleça o título e convide o usuário para navegar'
         />
         <ThreeColumnsGrid contentId='home' />

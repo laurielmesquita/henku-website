@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 export const ButtonWrapper = styled(Link)`
   position: relative;
   display: inline-block;
-  padding: 1rem 1.9rem;
+  padding: 1rem 1.5rem;
   font-size: 1rem;
   font-family: Montserrat, sans-serif;
   font-weight: 500;

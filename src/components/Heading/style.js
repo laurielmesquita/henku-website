@@ -18,26 +18,26 @@ export const HeadingWrapper = styled.div`
 
   @media (min-width: 1200px) {
     margin-bottom: 6.25rem;
-    max-width: 66.6666666667%;
+    max-width: 100%;
   }
 `
 
 export const HeadingHead = styled.h2`
-  margin: 0 auto 1.25rem;
-  color: var(--themeDark);
+  color: var(--deepDark);
+  font-size: calc(1.4125rem + 1.95vw);
 
   .dark & {
     color: #fff;
   }
 
-  @media (max-width: 576px) {
-    font-size: calc(1.125rem + 0.6vw);
+  @media (min-width: 1200px) {
+    font-size: 2.875rem;
   }
 `
 
 export const HeadingInfo = styled.p`
   color: var(--theme);
-  font-size: calc(1rem + 0.15vw);
+  font-size: 1.125rem;
 
   .dark & {
     color: hsla(0, 0%, 100%, 0.75);

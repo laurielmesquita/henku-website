@@ -33,7 +33,7 @@ export const MenuLinksLabel = styled.label`
     .menuBox {
       position: fixed;
       border-radius: 50%;
-      background: var(--theme);
+      background: var(--brand);
       top: 11px;
       right: 10px;
       cursor: pointer;

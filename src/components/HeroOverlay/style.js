@@ -42,20 +42,14 @@ export const HeroMediaContent = styled.div`
 
 export const HeroMediaTitle = styled.h1`
   opacity: 0.95;
-  margin-bottom: 1.25rem;
-  font-size: calc(1.275rem + 0.5vw);
-  line-height: 1.3;
+  font-size: calc(1.85rem + 0.5vw);
 
-  @media (min-width: 376px) {
-    font-size: calc(1.375rem + 0.8vw);
+  @media (min-width: 452px) {
+    font-size: calc(1.525rem + 3.3vw);
   }
 
-  @media (min-width: 576px) {
-    font-size: calc(1.375rem + 1vw);
-  }
-
-  @media (min-width: 768px) {
-    font-size: calc(1.375rem + 1.5vw);
+  @media (min-width: 1386px) {
+    font-size: calc(1.525rem + 3vw);
   }
 `
 
