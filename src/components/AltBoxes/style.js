@@ -126,15 +126,15 @@ export const AltBoxesInfo = styled.div`
   }
 `
 
-export const AltBoxesHead = styled.h4`
-  margin-bottom: 1.125rem;
+export const AltBoxesHead = styled.h3`
+  margin-bottom: 1.5rem;
 
   @media (min-width: 640px) {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   @media (min-width: 992px) {
-    font-size: 1.625rem;
+    font-size: 2rem;
   }
 `
 
