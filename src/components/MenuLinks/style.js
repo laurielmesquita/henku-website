@@ -20,7 +20,7 @@ export const MenuLinksInput = styled.input`
       transform: rotate(90deg);
       top: 0;
     }
-    &:checked ~ nav ul {
+    &:checked ~ section nav ul {
       opacity: 1;
       visibility: visible;
       z-index: 2;
@@ -35,7 +35,7 @@ export const MenuLinksLabel = styled.label`
       border-radius: 50%;
       background: var(--theme);
       top: 11px;
-      right: 10px;
+      right: 20px;
       cursor: pointer;
       width: 50px;
       height: 50px;
@@ -82,12 +82,8 @@ export const MenuLinksLabel = styled.label`
   }
 `
 
-export const Container = styled.nav`
-  margin: 0 auto;
-  max-width: 1386px;
-
+export const MenuLinksNav = styled.nav`
   & > h1 {
-    padding-left: 0.9375rem;
     margin-bottom: 0;
 
     a {
@@ -102,6 +98,7 @@ export const Container = styled.nav`
 
   @media (min-width: 992px) {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -110,7 +107,6 @@ export const Container = styled.nav`
 export const MenuLinksList = styled.ul`
   @media (min-width: 992px) {
     display: flex;
-    padding-right: 0.9375rem;
     flex-direction: row;
     justify-content: space-around;
   }
