@@ -1,10 +1,8 @@
 import React from 'react'
-import { ContainerWrapper, Row } from './style'
+import { ContainerWrapper } from './style'
 
 const Container = ({ children, nameOfClass }) => (
-  <ContainerWrapper className={nameOfClass}>
-    <Row>{children}</Row>
-  </ContainerWrapper>
+  <ContainerWrapper className={nameOfClass}>{children}</ContainerWrapper>
 )
 
 export default Container
