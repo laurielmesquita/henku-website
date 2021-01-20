@@ -35,8 +35,8 @@ export const MenuLinksLabel = styled.label`
       position: fixed;
       border-radius: 50%;
       background-color: var(--brand);
-      top: 11px;
-      right: 20px;
+      top: 14px;
+      right: 15px;
       cursor: pointer;
       width: 50px;
       height: 50px;
