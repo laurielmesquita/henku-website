@@ -1,8 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
-import reset from 'styled-reset-advanced'
+import reset from './reset'
+import grid from './grid'
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
+  ${grid}
   :root {
     font-size: 16px;
     --brand: #4453a6;

@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react'
 import links from './data'
 import Brand from '../Brand'
 import SocialLinks from '../SocialLinks'
-import Container from '../Container'
 import {
   MenuLinksInput,
   MenuLinksLabel,
@@ -35,7 +34,7 @@ const MenuLinks = () => {
           <span className='menuBtn' />
         </div>
       </MenuLinksLabel>
-      <Container>
+      <div className='container'>
         <MenuLinksNav>
           <h1>
             <MenuLinksLink to='/' title='Página inicial'>
@@ -59,7 +58,7 @@ const MenuLinks = () => {
             </MenuLinksItem>
           </MenuLinksList>
         </MenuLinksNav>
-      </Container>
+      </div>
     </>
   )
 }

@@ -21,7 +21,7 @@ export const MenuLinksInput = styled.input`
       transform: rotate(90deg);
       top: 0;
     }
-    &:checked ~ section nav ul {
+    &:checked ~ div nav ul {
       opacity: 1;
       visibility: visible;
       z-index: 2;
