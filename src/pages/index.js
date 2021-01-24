@@ -41,7 +41,7 @@ const IndexPage = () => (
             <Button
               slug='/about'
               buttonClass='buttonLight'
-              buttonTitle='Saiba mais sobre a Henku'
+              buttonTitle='Conheça a Henku'
             >
               Saiba mais sobre a Henku
             </Button>
