@@ -32,7 +32,7 @@ export const MenuLinksInput = styled.input`
 export const MenuLinksLabel = styled.label`
   @media (max-width: 991.98px) {
     .menuBox {
-      position: fixed;
+      position: absolute;
       border-radius: 50%;
       background-color: var(--brand);
       top: 14px;
@@ -40,7 +40,6 @@ export const MenuLinksLabel = styled.label`
       cursor: pointer;
       width: 50px;
       height: 50px;
-      position: absolute;
       box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
       transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
       z-index: 2;
@@ -119,7 +118,6 @@ export const MenuLinksList = styled.ul`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    list-style: none;
     font-size: 2.8125rem;
     font-size: calc(32px + (60 - 32) * (100vw - 300px) / (1386 - 300));
     line-height: 1.2;
