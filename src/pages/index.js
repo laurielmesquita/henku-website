@@ -43,7 +43,7 @@ const IndexPage = () => (
               buttonClass='buttonLight'
               buttonTitle='Conheça a Henku'
             >
-              Saiba mais sobre a Henku
+              Conheça a Henku
             </Button>
           </p>
         </div>
