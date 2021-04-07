@@ -13,15 +13,15 @@ const Footer = () => (
       <div className='row'>
         <Heading
           nameClass='dark'
-          headingTitle='Fale com a Henku'
-          headingInfo='Mande-nos uma mensagem por e-mail ou pelas redes sociais'
+          headingTitle="Let's talk"
+          headingInfo='Please send us an email or contact us on the other networks'
         />
         <FooterNav>
           <SocialLinksFooter />
         </FooterNav>
         <Copyright>
           <img src={brandImageFooter} alt='Henku Logo' />
-          <small>&copy; Copyright 2020, Henku Corporation</small>
+          <small>&copy; Copyright 2020, Henku</small>
         </Copyright>
       </div>
     </div>

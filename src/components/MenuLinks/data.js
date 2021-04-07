@@ -1,18 +1,18 @@
 const links = [
   {
-    label: 'Sobre Nós',
+    label: 'About',
     url: '/about',
-    title: 'Saiba mais sobre a Hanku'
+    title: 'About Us'
   },
   {
     label: 'Machine Learning',
     url: '/machine-learning',
-    title: 'Saiba mais sobre Machine Learning'
+    title: 'Machine Learning'
   },
   {
     label: 'Data Science',
     url: '/data-science',
-    title: 'Saiba mais sobre Data Science'
+    title: 'Data Science'
   }
 ]
 

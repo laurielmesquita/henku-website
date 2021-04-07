@@ -2,21 +2,21 @@ const contents = {
   home: [
     {
       icon: 'Slackware',
-      title: 'Caso Número 1',
+      title: '',
       info:
-        'Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.'
+        'Through original research, we analyze strategic positions and how they are changing over time.'
     },
     {
       icon: 'Ubuntu',
-      title: 'Caso Número 2',
+      title: '',
       info:
-        'Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.'
+        'We produce unbiased and straightforward assessments of where our customers are competitively positioned, building lasting advantages.'
     },
     {
       icon: 'Debian',
-      title: 'Caso Número 1',
+      title: '',
       info:
-        'Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.'
+        'We also create the infrastructure necessary for smarter strategic choices.'
     }
   ],
   about: [

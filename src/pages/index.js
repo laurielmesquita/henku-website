@@ -13,18 +13,17 @@ const IndexPage = () => (
   <Layout>
     <SEO title='Home' />
     <HeroMedia
-      heroTitle='Conteúdo mais importante aqui'
-      heroInfo='Aqui um texto de apoio, descritivo que fortaleça o título e convide o
-      usuário para navegar'
-      heroBtnTitle='Fale com um especialista'
+      heroTitle='Data Egineering & Machine Learning Consultants'
+      heroInfo='We help companies build innovative and reliable products, take advantage of their data, and innovate faster with Machine Learning and Data Engineering technologies'
+      heroBtnTitle="Let's talk"
       slug='#contact'
       srcMedia={video}
     />
     <div className='container verticalSpacer'>
       <div className='row'>
         <Heading
-          headingTitle='Um título sobre os dois serviços aqui'
-          headingInfo='Aqui um texto que reforce a ideia sobre os dois serviços ambiguamente'
+          headingTitle='Bring your product or operation to the next level'
+          headingInfo='With the help of Data Engineering and Machine Learning, our company will transform your data into insights and competitive advantage'
         />
         <DarkBox />
       </div>
@@ -33,17 +32,17 @@ const IndexPage = () => (
       <div className='container verticalSpacer'>
         <div className='row'>
           <Heading
-            headingTitle='Conteúdo de relevância secundária'
-            headingInfo='Aqui um texto de apoio, descritivo que fortaleça o título e convide o usuário para navegar'
+            headingTitle='How we work'
+            headingInfo="Transform your data into valuable insights with our consultants' help using Data Engineering and Machine Learning solutions"
           />
           <ThreeColumnsGrid contentId='home' />
           <p className='textCenter mgTop-100'>
             <Button
               slug='/about'
               buttonClass='buttonLight'
-              buttonTitle='Conheça a Henku'
+              buttonTitle='About Us'
             >
-              Conheça a Henku
+              About Us
             </Button>
           </p>
         </div>
