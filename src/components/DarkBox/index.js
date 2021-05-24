@@ -13,10 +13,10 @@ const DarkBox = () => (
     <DarkBoxContent>
       <DarkBoxTag>Machine Learning</DarkBoxTag>
       <DarkBoxHead>
-        Machine Learning helps solve complex data challenges
+        Machine Learning Consulting
       </DarkBoxHead>
       <DarkBoxLink to='/machine-learning'>
-        Saiba mais
+        More
         <svg
           width='25'
           height='10'
@@ -44,10 +44,10 @@ const DarkBox = () => (
     <DarkBoxContent>
       <DarkBoxTag>Data Science</DarkBoxTag>
       <DarkBoxHead>
-        Projetos de ciência de dados feitos corretamente
+        Data Mining & Statistical Analysis
       </DarkBoxHead>
       <DarkBoxLink to='/data-science'>
-        Saiba mais
+        More
         <svg
           width='25'
           height='10'

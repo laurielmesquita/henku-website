@@ -10,11 +10,11 @@ import video from '../images/henku-about.mp4'
 
 const AboutPage = () => (
   <Layout>
-    <SEO title='Sobre Nós' />
+    <SEO title='About' />
     <HeroMedia
-      heroTitle='Conheça a Henku'
-      heroInfo='O nosso DNA é forjado no aprendizado continuo e constante'
-      heroBtnTitle='Fale com um especialista'
+      heroTitle='Henku'
+      heroInfo='We are an intelligent consultancy with an efficient team in Machine Learning and Data Science. We develop Machine Learning, Data Engineering, and Business Intelligence solutions for companies and high-tech companies worldwide.'
+      heroBtnTitle="Let's talk"
       slug='#contact'
       srcMedia={video}
     />
@@ -22,28 +22,13 @@ const AboutPage = () => (
       <div className='container verticalSpacer'>
         <div className='row'>
           <Heading
-            headingTitle='Saiba um pouco sobre a nossa história'
-            headingInfo='Aqui um texto que reforce a ideia sobre do título em uma linha'
+            headingTitle='Create machine learning and Big Data solutions with us'
+            headingInfo='Here we focus on finding customized business solutions using machine learning and data science-oriented technologies.'
           />
           <p className='highlightInfo'>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et.
+            Our customers benefit from our team that develops practical tools that cooperate seamlessly with existing software. We build our solutions based on innovative technologies. We ensure that our products increase your company's results not only now, but also in the future, as it adapts to changes.
           </p>
         </div>
-      </div>
-    </div>
-    <div className='container verticalSpacer'>
-      <div className='row'>
-        <Heading
-          headingTitle='Nossos valores'
-          headingInfo='Aqui um texto de apoio, descritivo que fortaleça o título e convide o usuário para navegar'
-        />
-        <ThreeColumnsGrid contentId='about' />
       </div>
     </div>
   </Layout>
