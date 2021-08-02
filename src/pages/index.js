@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from '../components/Layout'
-import SEO from '../components/seo'
+import Seo from '../components/Seo'
 import HeroMedia from '../components/HeroMedia'
 import Heading from '../components/Heading'
 import video from '../images/henku-home.mp4'
@@ -11,7 +11,7 @@ import Button from '../components/Button'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title='Home' />
+    <Seo title='Home' />
     <HeroMedia
       heroTitle='Data Egineering & Machine Learning Consultants'
       heroInfo='We help companies build innovative and reliable products, take advantage of their data, and innovate faster with Machine Learning and Data Engineering technologies'

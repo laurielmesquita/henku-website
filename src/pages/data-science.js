@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SEO from '../components/seo'
+import Seo from '../components/Seo'
 import Layout from '../components/Layout'
 import HeroMedia from '../components/HeroMedia'
 import Heading from '../components/Heading'
@@ -10,7 +10,7 @@ import video from '../images/henku-data-science.mp4'
 
 const DataSciencePage = () => (
   <Layout>
-    <SEO title='Data Science' />
+    <Seo title='Data Science' />
     <HeroMedia
       heroTitle='Data Science'
       heroInfo='Through Data Science, we help your company automatically extract knowledge and insights from various significant data sources. No matter what sector your company operates in or your company profile, to make correct and effective business decisions, it would be best if you relied on reliable forecasts and insights.'
@@ -26,7 +26,14 @@ const DataSciencePage = () => (
             headingInfo='Data science and analysis related to operations are to take advantage of the data collected to determine new opportunities for business improvement and operations optimization.'
           />
           <p className='highlightInfo'>
-            Data mining and statistical analysis focus on applying statistics in exploratory data analysis and predictive models. Its purpose is to determine trends and patterns in data when using existing data sources. The main opportunities arising from implementing this technology include enabling entrepreneurs to take a business problem, turn it into a data issue, create predictive models that answer that question, and obtain detailed information about the results.
+            Data mining and statistical analysis focus on applying statistics in
+            exploratory data analysis and predictive models. Its purpose is to
+            determine trends and patterns in data when using existing data
+            sources. The main opportunities arising from implementing this
+            technology include enabling entrepreneurs to take a business
+            problem, turn it into a data issue, create predictive models that
+            answer that question, and obtain detailed information about the
+            results.
           </p>
         </div>
       </div>

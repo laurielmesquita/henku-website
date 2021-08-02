@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SEO from '../components/seo'
+import Seo from '../components/Seo'
 import Layout from '../components/Layout'
 import HeroMedia from '../components/HeroMedia'
 import Heading from '../components/Heading'
@@ -10,7 +10,7 @@ import video from '../images/henku-machine-learning.mp4'
 
 const MachineLearningPage = () => (
   <Layout>
-    <SEO title='Machine Learning' />
+    <Seo title='Machine Learning' />
     <HeroMedia
       heroTitle='Machine Learning'
       heroInfo="We produce reliable data analysis reports using ML techniques to process the data and determine which sets will be crucial in your business's success"
@@ -26,9 +26,11 @@ const MachineLearningPage = () => (
             headingInfo='Machine learning (ML) enables computers to “think” and learn like humans, basing their conclusions and future predictions on historical data analysis and real-time data'
           />
           <p className='highlightInfo'>
-            It is a rapidly developing technology that impacts almost every aspect of a business.
-	    Machine learning consulting opens up several new opportunities for your company.
-	    You can: personalize customer service, automate processes, implement solutions that will change the way customers interact with your product.
+            It is a rapidly developing technology that impacts almost every
+            aspect of a business. Machine learning consulting opens up several
+            new opportunities for your company. You can: personalize customer
+            service, automate processes, implement solutions that will change
+            the way customers interact with your product.
           </p>
         </div>
       </div>
